@@ -1,0 +1,162 @@
+*{
+
+	box-sizing: border-box;
+}
+body{
+
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0; 
+}
+button:focus{
+
+	outline: 0;
+}
+@font-face{
+
+	font-family: Roboto-Regular;
+	src: url(fonts/RobotoRegular.ttf);
+}
+@font-face{
+
+	font-family: Roboto-Light;
+	src: url(fonts/RobotoLight.ttf);
+}
+@font-face{
+
+	font-family: Roboto-Black;
+	src: url(fonts/RobotoBlack.ttf);
+}
+h2{
+
+	font-family: Roboto-Regular;
+}
+#container{
+
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#header{
+
+	width: 100%;
+	height: 15%;
+}
+#title-game{
+	position: static;
+	display: inline-block;
+	font-size: 45px;
+	color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	margin-left: 50px;
+	width: 500px;
+}
+#game-field{
+
+	width: 100%;
+	height: 85%;
+	background-color: rgba(230, 0, 0, 0.6);
+	text-align: center;
+	padding-top: 20px;
+
+}
+#game-container{
+
+	width: 650px;
+	height: 530px;
+	margin: 0 auto;
+	background-color: #f0ed62;
+	border-radius: 20px;
+
+}
+#options{
+
+	width: 100%;
+	height: 150px;
+}
+#user{
+
+	display: inline-block;
+	margin-right: 15px;
+}
+#ia{
+
+	display: inline-block;
+	margin-left: 15px;
+}
+#icon{
+
+	margin-bottom: 10px;
+}
+#count{
+
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	font-family: Roboto-Light;
+	margin: 0;
+	line-height: 40px;
+	font-size: 25px;
+}
+#game-space{
+
+	margin: 0 auto;
+    width: 310px;
+    height: 310px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+}
+.casilla{
+	width: 100px;
+    height: 100px;
+    border: solid 10px rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+	
+}
+#new-game{
+
+	width: 200px;
+	height: 40px;
+	display: block;
+	font-family: Roboto-Black;
+	font-size: 20px;
+	color: white;
+	background-color: #de4545;
+	border-style: none;
+	border-radius: 5px;
+	border-bottom: solid 3px rgba(0, 0, 0, 0.5);
+	border-right: solid 3px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	margin: 0 auto;
+
+}
+#new-game:active{
+
+	border: none;
+	box-shadow: inset 1px 1px 5px black;
+}
+#winner-message{
+
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 10px 0 0 10px;
+	box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.7);
+	border-right: 5px solid rgba(255, 255, 255, 0.7);
+	float: right;
+	padding-right: 20px;
+	background-color: rgb(0, 179, 60);
+	color: white;
+	font-family: Roboto-Light;
+}

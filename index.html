@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Gato</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="jquery-2.1.4"></script>
+	<script type="text/javascript" src="algoritmo"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--Iconos Library-->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<h2 id="title-game">Tres en Linea <span class="fa fa-gamepad fa-lg" aria-hidden="true" style="color: rgba(0, 115, 230, 0.8);"></span></h2>
+		</div>
+		<div id="game-field">
+			<h2 id="winner-message" hidden></h2>
+			<div id="game-container">
+				<div id="options">
+					<h2 style="font-size: 30px; margin: 0; padding-top: 10px; padding-bottom: 10px;">Marcador</h2>
+					<div id="marcador">
+						<div id="user">
+							<span class="fa fa-user fa-2x" aria-hidden="true" id="icon"></span>
+							<p id="count" class="userWin">0</p>
+						</div>
+						<div id="ia">
+							<span class="fa fa-desktop fa-2x" aria-hidden="true" id="icon"></span>
+							<p id="count" class="iaWin">0</p>
+						</div>
+					</div>
+				</div>
+				<div id="game-space">
+					<div class="casilla" value="0"></div>
+					<div class="casilla" value="1"></div>
+					<div class="casilla" value="2"></div>
+					<div class="casilla" value="3"></div>
+					<div class="casilla" value="4"></div>
+					<div class="casilla" value="5"></div>
+					<div class="casilla" value="6"></div>
+					<div class="casilla" value="7"></div>
+					<div class="casilla" value="8"></div>
+				</div>
+				<br>
+				<button id="new-game">Juego Nuevo</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
